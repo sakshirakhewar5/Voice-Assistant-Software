@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="com.example.magic.MainActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSpeakContainer"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="20dp"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/voiceInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnSpeakContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f5f5f5"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="522dp"
+        android:layout_marginEnd="149dp"
+        android:text="start" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="316dp"
+        android:layout_height="311dp"
+        android:layout_alignEnd="@id/imageview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="-1dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/googlemic" />
+
+    <android.support.constraint.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+</RelativeLayout>
